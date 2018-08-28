@@ -27,6 +27,8 @@ const reducer = (state = constants.initialState , action) => {
                 newState.counter = 0 ;
             }
             return newState ;
+        case constants.RESET :
+            return constants.initialState ;
         default:
             return state ;
     }

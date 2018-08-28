@@ -26,14 +26,21 @@ class Counter extends Component {
             type : constants.TOGGLE_NEGATIVE_ALLOWED
         })
     }
+    reset = () => {
+        this.props.dispatch({
+            type : constants.RESET
+        }) ;
+    }
     render() {
         return (
             <div className="main-div">
-                <h1> Counter : {this.props.counter} </h1>
-                <button className="btn" id="increase-button" onClick={() => this.increaseCounter()}>Increase</button>
-                <button className="btn" id="decrease-button" onClick={() => this.decreaseCounter()}>Decrease</button>
-                <h3> {this.props.negativeAllowed ? 'Disable' : 'Enable'} negative numbers </h3>
-                <button className="btn" id="toggle-button" onClick={() => this.toggleNegativeBehaviour()}>{this.props.negativeAllowed ? 'Disable' : 'Enable'}</button>
+                <h1> {this.props.counter} </h1>
+                <div className="btn-wrap">
+                    <button className="btn" id="increment" onClick={() => this.increaseCounter()}>Increase</button>
+                    <button className="btn" id="decrement" onClick={() => this.decreaseCounter()}>Decrease</button>
+                    <button className="btn" id="toggle" onClick={() => this.toggleNegativeBehaviour()}>{this.props.negativeAllowed ? 'Disable' : 'Enable'}</button>
+                    <button id="reset" onClick={() => this.reset()}>Reset</button>
+                </div>
             </div>
         );
     }
