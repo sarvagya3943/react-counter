@@ -1,0 +1,25 @@
+.main-div {
+    top : 30% ;
+    left : 30% ;
+    position: absolute;
+    box-shadow: -1px 5px 5px 6px #ccc;
+    width : 400px;
+    height : 200px;
+    background: #e74c3c ;
+}
+h1 , h3 {
+    text-align: center;
+}
+button {
+    border-radius: 10px;
+    height : 30px;
+}
+#increase-button {
+    margin-left: 125px;
+}
+#decrease-button {
+    margin-left: 15px;
+}
+#toggle-button {
+    margin-left: 160px ;
+}
