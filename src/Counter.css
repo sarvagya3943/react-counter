@@ -39,6 +39,7 @@ button {
   background: #fefefe;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 5px ;
   transition: transform 60ms ease-out;
   cursor: pointer;
   color: #5cb85c;
@@ -72,10 +73,16 @@ button {
 #toggle {
     margin-left: 5px;
   color: #ff9d5d;
-  border-color: lighten(#ff9d5d, 7%);
+  border-color: lighten(#8d6347, 7%);
 }
 #reset {
     margin-left: 5px ;
-    color: #ff9d5d;
+    color: #441c01;
     border-color: lighten(#ff9d5d, 7%);
+}
+#undo {
+  color : #074b5f ;
+}
+#redo {
+  color : #5f0745 ;
 }
