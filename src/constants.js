@@ -1,7 +1,3 @@
-// export const initialState = {
-//     Counters : []
-// };
-
 export const initialState = {
     counter : 0 , 
     negativeAllowed : true
