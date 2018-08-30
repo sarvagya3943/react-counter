@@ -41,6 +41,8 @@ button {
   margin-bottom: 10px;
   transition: transform 60ms ease-out;
   cursor: pointer;
+  color: #5cb85c;
+  border-color: lighten(#5cb85c, 7%);
   &:active {
     transform: translateY(2px);
     transition: transform 100ms ease-out;

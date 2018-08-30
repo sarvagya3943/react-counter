@@ -3,7 +3,7 @@ import Counter from './Counter' ;
 import { Provider } from 'react-redux' ;
 import { createStore } from 'redux' ;
 import * as constants from './constants' ;
-// visual studio comment
+
 const reducer = (state = constants.initialState , action) => {
     console.log(action) ;
     let newState ;
@@ -44,3 +44,15 @@ const App = () => (
 
 
 export default App ;
+
+// import React from 'react' 
+// import Counter from './Counter'
+
+// const App = () => (
+//     <div>
+//         <Counter id={0} />
+//         <Counter id={1} />
+//     </div>
+// );
+
+// export default App
